@@ -4,10 +4,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
 -->
 <html>
-    <head>
-        <title>Project</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         ul {
             list-style-type: none;
@@ -62,11 +63,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             background-size: cover;
         }
 
-        .footer{
-            background-color: #6d583e;
-            color: aliceblue;
-            bottom: 20px;
+        footer {
+            width: 100%;
+            height: 50px;
+            background-color: #000000;
+            text-align: center;
+            color: rgb(255, 255, 255);
             font-size: large;
+        }
+
+        img {
+            margin-left: 20px;
+            border: 3px solid black;
+            width: 470px;
         }
 
         body {
@@ -74,8 +83,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             /* เว้นให้เท่าความสูงของเมนู */
         }
     </style>
-    </head>
-    <header>
+</head>
+<header>
     <nav>
         <ul>
             <li><a href="index.html">
@@ -105,34 +114,51 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </ul>
     </nav>
 </header>
-    <body>
+
+<body>
+    <section>
         <h1>Project</h1>
-        <p><b>This page is for project that i made in  high school.</b>
-        <strong>(Press on the <mark>Picture</mark> to watch VDO)</strong></p>
+        <p><b>This page is for project that i made in high school.</b>
+            <strong>(Press on the <mark>Picture</mark> to watch VDO)</strong>
+        </p>
+    </section>
+
+    <section>
         <div>
-            <center>
-                <hr width="96%">
-                <a href="https://youtu.be/A_SF29HgAPU" target="_blank">
-                <img src="ytcover.webp" alt="YoutubeCover" width="470" title="How to program an IR Remote Control">
-                </a>
 
-                <a href="https://youtu.be/7G84k2F03K8" target="_blank">
-                <img src="ytcover2.webp" alt="YoutubeCover" width="470" title="วิธีโปรแกรมcensorตรวจจับความเคลื่อนไหว">
-                </a>
+            <hr width="96%">
+            <a href="https://youtu.be/A_SF29HgAPU" target="_blank">
+                <img src="ytcover.webp" alt="YoutubeCover" title="How to program an IR Remote Control">
+            </a>
 
-                <a href="https://youtu.be/FUdSMq8rYP8" target="_blank">
-                <img src="ytcover3.webp" alt="YoutubeCover" width="470" title="การทดลอง อิเล็กโทรไลซิสของCuSO4">
-                </a>
-                <hr width="96%">
-            </center>
+            <a href="https://youtu.be/7G84k2F03K8" target="_blank">
+                <img src="ytcover2.webp" alt="YoutubeCover" title="วิธีโปรแกรมcensorตรวจจับความเคลื่อนไหว">
+            </a>
+
+            <a href="https://youtu.be/FUdSMq8rYP8" target="_blank">
+                <img src="ytcover3.webp" alt="YoutubeCover" title="การทดลอง อิเล็กโทรไลซิสของCuSO4">
+            </a>
+            <hr width="96%">
         </div>
+    </section>
 
-        <div>
-            <img src="https://64.media.tumblr.com/tumblr_mdtjh2ObSD1rfe6e3o1_500.gif" alt="gif2" width="390" height="200" >
-            <div align="right">
-                <i><b>Copyright &copy;2025 designed by Ornpreeya</b></i>
-            </div>
-        </div>
+    <article>
+        <h3>Did you watch my project???</h3>
+        
+            <input type="checkbox" id="yes,no" name="yes,no" value="yes">
+            <label for="yes,no"> Yes , I do</label><br>
 
-    </body>
+            <input type="checkbox" id="yes,no" name="yes,no" value="no">
+            <label for="yes,no"> No , I don't</label><br><br>
+            
+            <input type="submit" value="Submit">
+
+    </article>
+
+    <footer><br>
+        <i><b>Copyright &copy;2025 designed by Ornpreeya</b></i>
+
+    </footer>
+</body>
+
 </html>

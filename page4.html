@@ -4,10 +4,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
 -->
 <html>
-    <head>
-        <title>My Hobby</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>My Hobby</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         ul {
             list-style-type: none;
@@ -52,21 +53,62 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             background-color: #04AA6D;
         }
 
-        .section {
+        section {
             text-align: center;
             margin: 0;
-            background-image: url('https://static.vecteezy.com/system/resources/previews/027/231/654/non_2x/illustration-graphic-of-aesthetic-background-template-with-simple-and-minimalist-pastel-colors-vector.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            /* ถ้าอยากให้ภาพไม่เลื่อนตาม scroll */
-            background-size: cover;
         }
 
-        .footer{
-            background-color: #6d583e;
-            color: aliceblue;
-            bottom: 20px;
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            border: 3px solid black;
+            width: 100%;
+            height: auto;
+
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        aside {
+            background-color: #c6c4c4;
+            float: left;
+            /* only for demonstration, should be removed */
+            padding: 20px;
+            width: 25%;
+            height: 490px;
+        }
+
+        section {
+            text-align: left;
+            height: 450px;
+
+        }
+
+        footer {
+            width: 100%;
+            height: 50px;
+            background-color: #000000;
+            text-align: center;
+            color: rgb(255, 255, 255);
             font-size: large;
+        }
+
+        article {
+            color: rgb(135, 10, 10);
+            font-size: large;
+            height: 80px;
         }
 
         body {
@@ -74,8 +116,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             /* เว้นให้เท่าความสูงของเมนู */
         }
     </style>
-    </head>
-    <header>
+</head>
+<header>
     <nav>
         <ul>
             <li><a href="index.html">
@@ -105,30 +147,103 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </ul>
     </nav>
 </header>
-    <body>
+
+<body>
+    <aside>
         <h1>My Hobby</h1>
         <div>
-        <h3>My favorite hobby is watching TV. Whenever I have free time, I love watching television. It never obstructs my studies. 
-            Hobbies help us to expand our knowledge, and it teaches us several things. First, I like to finish all my school homework and then start watching TV.
-            This lightens my mood and sparks up the excitement inside me, as it increases my curiosity about the world. Watching different useful stuff on TV enhances
-             my knowledge horizons and gives me lots of joy.</h3>
+            <h3>My favorite hobby is watching TV. Whenever I have free time, I love watching television. It never
+                obstructs
+                my studies.
+                Hobbies help us to expand our knowledge, and it teaches us several things. First, I like to finish all
+                my
+                school homework and then start watching TV.
+                This lightens my mood and sparks up the excitement inside me, as it increases my curiosity about the
+                world.
+                Watching different useful stuff on TV enhances
+                my knowledge horizons and gives me lots of joy.</h3>
         </div>
 
         <div>
-            <h3>Anothey my hobby is gaming. I usually don’t use the term hobby, but I play quite often. Gaming is my way to relax.
-                 I spend my free time playing games online with my friends and it’s the way I connect with my friends.</h3>
+            <h3>Anothey my hobby is gaming. I usually don’t use the term hobby, but I play quite often. Gaming is my way
+                to
+                relax.
+                I spend my free time playing games online with my friends and it’s the way I connect with my friends.
+            </h3>
+        </div>
+    </aside>
+
+    <section>
+        <br>
+        <h1>My favourite Anime & TV shows !!</h1>
+
+        <div class="gallery">
+            <a href="https://www.google.com/search?q=the+rooki&sca_esv=49266cf56d93934f&biw=1536&bih=703&sxsrf=AE3TifNnrOjm0UqhnrFHlVKyPYn-LAcUkQ%3A1753440022072&ei=Fl-DaOKRBLWZ4-EPtoGoqQc&ved=0ahUKEwji9JmN6deOAxW1zDgGHbYAKnUQ4dUDCBA&uact=5&oq=the+rooki&gs_lp=Egxnd3Mtd2l6LXNlcnAiCXRoZSByb29raTIQECMY8AUYgAQYJxjJAhiKBTIKECMYgAQYJxiKBTINEC4YgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIFEAAYgAQyCBAAGIAEGMsBMgoQLhiABBhDGIoFMgsQABiABBixAxiDATIIEAAYgAQYywEyBRAAGIAEMhwQLhiABBixAxhDGIoFGJcFGNwEGN4EGOAE2AEBSNoXUN0EWMMScAF4AZABAJgBf6ABxgaqAQM1LjO4AQPIAQD4AQGYAgmgAscHwgIHECMYsAMYJ8ICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIOEAAYsAMY5AIY1gTYAQHCAhMQLhiABBiwAxhDGMgDGIoF2AEBwgIEECMYJ8ICCBAuGIAEGLEDwgIZEC4YgAQYQxiKBRiXBRjcBBjeBBjgBNgBAcICCxAuGIAEGMcBGK8BwgILEC4YgAQYsQMY1AKYAwCIBgGQBhK6BgYIARABGAmSBwMzLjagB6CdAbIHAzIuNrgHuQfCBwcyLTMuNS4xyAd3&sclient=gws-wiz-serp"
+                target="_blank">
+                <img src="https://preview.redd.it/a-the-rookie-fan-here-is-this-show-a-recommendation-v0-nsa29lnzgcme1.jpg?width=1080&crop=smart&auto=webp&s=61cbc084a4831deb130b7eba2cd71da49e37795e"
+                    alt="The rookie" title="The rookie: Police,drama,crime">
+            </a>
+            <div class="desc">The Rookie</div>
         </div>
 
+        </div>
+
+        <div class="gallery">
+            <a href="https://www.google.com/search?q=the+100&sca_esv=49266cf56d93934f&biw=1536&bih=703&sxsrf=AE3TifP7WHVsb9iHOKOVI7FMpyVs-dfnXw%3A1753439851672&ei=a16DaJnsKMmy4-EPwqe28AY&ved=0ahUKEwjZzfm76NeOAxVJ2TgGHcKTDW4Q4dUDCBA&uact=5&oq=the+100&gs_lp=Egxnd3Mtd2l6LXNlcnAiB3RoZSAxMDAyEBAjGPAFGIAEGCcYyQIYigUyBBAjGCcyBBAjGCcyChAuGIAEGEMYigUyChAAGIAEGEMYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAuGIAEMgUQLhiABDIZEC4YgAQYQxiKBRiXBRjcBBjeBBjgBNgBAUip2wJQsLQCWKjFAnACeACQAQCYAXOgAawGqgEDMy41uAEDyAEA-AEBmAIJoALwBqgCEsICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIOEAAYsAMY5AIY1gTYAQHCAhMQLhiABBiwAxhDGMgDGIoF2AEBwgIHECMYJxjqAsICDRAjGPAFGCcYyQIY6gLCAhYQLhiABBhDGLQCGMgDGIoFGOoC2AEBwgIKECMYgAQYJxiKBcICCxAAGIAEGLEDGIMBwgINECMY8AUYgAQYJxiKBcICDhAAGIAEGLEDGIMBGIoFwgINEC4YgAQYsQMYQxiKBcICHBAuGIAEGLEDGEMYigUYlwUY3AQY3gQY4ATYAQGYAxfxBTQRZvpBVsaZiAYBkAYTugYGCAEQARgJkgcDMi43oAeutAGyBwMwLje4B84GwgcHMi0yLjYuMcgHiAE&sclient=gws-wiz-serp"
+                target="_blank">
+                <img src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/the100.png"
+                    alt="The 100" title="The 100: servival,apocalypse,action">
+            </a>
+            <div class="desc">The 100</div>
+        </div>
+
+        <div class="gallery">
+            <a href="https://www.google.com/search?sca_esv=49266cf56d93934f&sxsrf=AE3TifPKFEidt0-Mp9xCFuq8H-wu4JP40w:1753439553528&q=the+walking+dead&source=lnms&fbs=AIIjpHz0l59SMt1-S7luFp9RZHjEvMi8_ZP0eXyAohJ-2JUug-4tElnrEugoyjDv8p8WUsRJ3Lh6FesWhWAztjfPnTySTaCqfxECwN-MOqISCo9vVd1HlUEsUNYQAZ5KjWyntcTmN-9waWKYdh6w4yWpQQiPLYewbgYdU__nhKgpODoh-lLoi2kdkNkZJo3xc0LUU1HlcmgRRFgd4d_XGYVThJNLau3hOl_Ioeu-xg0p6cCJ8P0h4qaPiSNmV5ZJmsHMAcLGgUsxBvbRLhzvaLg23G1hG8Sy3QlRDloXPUU8xUvMNXIbOZ80nhtTqvHrqqXtWTzZI1HC&sa=X&ved=2ahUKEwjPpeSt59eOAxW23TgGHeOGB3MQ0pQJKAB6BAggEAE&biw=1536&bih=703&dpr=1.25"
+                target="_blank">
+                <img src="https://becommon.co/wp-content/uploads/2021/08/body1-The-Walking-Dead.jpg" alt="valorant"
+                    title="The Walking Dead: servival,apocalypse,action">
+            </a>
+            <div class="desc">The Walking Dead</div>
+        </div>
+
+        <div class="gallery">
+            <a href="https://www.google.com/search?sca_esv=49266cf56d93934f&sxsrf=AE3TifOApB-x6y8mpZE3OdgNA3wp_Fh_9w:1753440334910&q=attack+on+titan&udm=2&fbs=AIIjpHyS0KAY6ZV-K8zSZyFKDVPLsQIUnwxOQYQc7MeE2y4c9L91trUWzrzzKsMNgzxvHg0MyRdPzb1IjV2v2y4bX9YRNCfMjfGyOmL_-IkuK6vumUMulDAPXb0KO6rc0MPK8e9mSSzwBTp6KYPPMsCIXgVeAV_Tbrc9GJG3pP3U7-POhrygBUsDdywnAacjUTlCIVjQpeBCp1XtSgN2zCzusr711uw79z5K6XmN_rFtqzkyHUmDWjyUYWb64eyL0wacZZoTEIn4SAGn24FPI4eiBsFTLmxCMuKV84ohLxhG_YBDo6Smi8I&sa=X&ved=2ahUKEwiRhbCi6teOAxXgxjgGHf3XCMEQtKgLKAF6BAghEAE&biw=1536&bih=703&dpr=1.25#vhid=TtYOqshE59hu4M&vssid=mosaic"
+                target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrt82NZAbD5J6B2NVXAcgFvjg0DW4whgncvmKQK3kaoOjmsqVvT6EKoR4e9iiB5J949lE&usqp=CAU"
+                    alt="aot" title="Attack on Titan: Action, Servival">
+            </a>
+            <div class="desc">Attack on Titan</div>
+        </div>
+
+        <div class="gallery">
+            <a href="https://www.google.com/search?sca_esv=49266cf56d93934f&sxsrf=AE3TifNEYRZV34J_mKohFhUTZ0JrutrLhw:1753441064911&q=tensei+shitara+slime+datta+ken&source=lnms&fbs=AIIjpHxgN8IDoTZWAWCvUQJHOo7cHC_rNMdKQQu2G225EJQwVE4TWF4x20ByFOJ4Vns3V7Q2880yGxXfCEKSOEePXEUic8laafyKwG2IIuCeTv8AqZbTdycwCrYowTLDtw8UBGhLYTpea8XtoMrt625sepVOfszC7nEByBVQSrKD6z7kjKcAm5Uryx1tSWRf9OJMuoKo26natyyrlr8iW0Meb4526ov6uMSY-5xZxAqR5cOAEr4vD_BEfpJlNYqvZbCaCex417BRZkHXMZ77XKYaUkxvdGIaoUvpFttbAQ16soD-S-m5qKmIt9l8u3FFLtnTyLb1lpOY&sa=X&ved=2ahUKEwiM77v-7NeOAxWUSGwGHWSVMZEQ0pQJKAB6BAgaEAE&biw=1536&bih=703&dpr=1.25"
+                target="_blank">
+                <img src="https://wiki.anime-os.com/image/2018/03/Tensei-Shitara-Slime-Datta-Ken-2018.jpg" alt="slime"
+                    title="tensei shitara slime datta ken">
+            </a>
+            <div class="desc">Tensei shitara slime datta ken</div>
+        </div>
+
+    </section>
+
+    <article>
         <div>
-            <strong><b><mark>My favourite TV shows & games!!</mark></b></strong><br>
-            <strong><b>(Move mouse to see titile and category)</b></strong><br>
-            <img src="https://preview.redd.it/a-the-rookie-fan-here-is-this-show-a-recommendation-v0-nsa29lnzgcme1.jpg?width=1080&crop=smart&auto=webp&s=61cbc084a4831deb130b7eba2cd71da49e37795e" alt="The rookie" width="240" title="The rookie: Police,drama,crime">
-            <img src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/the100.png" alt="The 100" width="240" title="The 100: servival,apocalypse,action">
-            <img src="https://www.lnwtrue.com/_next/image?url=https%3A%2F%2Fmedia.lnwtrue.com%2Fimages%2Fproducts%2Fvalorant-epin%2FkHHItpgXZxtDXw.webp&w=3840&q=75" alt="valorant" title="Valorant: Noob game (Don't Download, It's wasting ur time)">
-        
+            <b><q>Actually, I like to play Valorant too. You can download for free in Riot </q><br>
+                Download Valorant: <a href="https://playvalorant.com/th-th/download/"> Click Here</a></b><br>
+                <!--มั่วอิ้ง-->
+                <!--<form action="/movie.php">-->
+                <label for="movie">Suggest Movie:</label>
+                <input type="text" id="movie" name="movie"><br><br>
+                <!--</form>-->
+                <!--มั่วจ้า-->
         </div>
+    </article>
 
-        
-        
-    </body>
+    <footer><br>
+        <i><b>Copyright &copy;2025 designed by Ornpreeya</b></i>
+
+    </footer>
+
+</body>
+
 </html>

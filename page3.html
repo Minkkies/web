@@ -4,10 +4,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
 -->
 <html>
-    <head>
-        <title>Academy</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>Academy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         ul {
             list-style-type: none;
@@ -52,21 +53,47 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             background-color: #04AA6D;
         }
 
-        .section {
-            text-align: center;
-            margin: 0;
-            background-image: url('https://static.vecteezy.com/system/resources/previews/027/231/654/non_2x/illustration-graphic-of-aesthetic-background-template-with-simple-and-minimalist-pastel-colors-vector.jpg');
+        footer {
+            font-size: large;
+            text-align: right;
+        }
+
+        #timetable {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #timetable td,
+        #timetable th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #timetable tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #timetable tr:hover {
+            background-color: #ddd;
+        }
+
+        #timetable th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        section {
+            width: 100%;
+            height: 600px;
+            background-image: url(https://img.freepik.com/free-vector/flower-desktop-wallpaper-background-vector_53876-144449.jpg);
             background-repeat: no-repeat;
             background-attachment: fixed;
             /* ถ้าอยากให้ภาพไม่เลื่อนตาม scroll */
             background-size: cover;
-        }
-
-        .footer{
-            background-color: #6d583e;
-            color: aliceblue;
-            bottom: 20px;
-            font-size: large;
         }
 
         body {
@@ -74,8 +101,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             /* เว้นให้เท่าความสูงของเมนู */
         }
     </style>
-    </head>
-    <header>
+</head>
+<header>
     <nav>
         <ul>
             <li><a href="index.html">
@@ -104,64 +131,75 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             </li>
         </ul>
     </nav>
-</header>   
-    <body>
+</header>
+
+<body>
+    <section>
+        <br>
         <h1>Time Table</h1>
-        <table width="100%" border="3" >
-            <tr>
-                <th>SUBJECT</th>
-                <th>DATE/TIME</th>
-                <th>ROOM</th>
-                <th>PROFESSOR</th>
-                <th>EXAM DATE</th>
-            </tr>
+        <div style="background-color: #ffffff;">
+            <table id="timetable">
+                <tr>
+                    <th>SUBJECT</th>
+                    <th>DATE/TIME</th>
+                    <th>ROOM</th>
+                    <th>PROFESSOR</th>
+                    <th>EXAM DATE</th>
+                </tr>
 
-            <tr>
-                <td>COS3108</td>
-                <td>M 11:30 - 13:20</td>
-                <td>SCL 205</td>
-                <td>ผศ.พรพรรณ</td>
-                <td rowspan="6">คณะจัดสอบเอง</td>
-            </tr>
+                <tr>
+                    <td>COS3108</td>
+                    <td>M 11:30 - 13:20</td>
+                    <td>SCL 205</td>
+                    <td>ผศ.พรพรรณ</td>
+                    <td rowspan="6">คณะจัดสอบเอง</td>
+                </tr>
 
-            <tr>
-                <td>COS3107</td>
-                <td>W 11:30 - 13:20</td>
-                <td>SCL 204</td>
-                <td>ผศ.ดร.สุภัทรา</td>
-                
-            </tr>
+                <tr>
+                    <td>COS3107</td>
+                    <td>W 11:30 - 13:20</td>
+                    <td>SCL 204</td>
+                    <td>ผศ.ดร.สุภัทรา</td>
 
-            <tr>
-                <td>COS3109</td>
-                <td>W LEC. 13:30 - 15:20 <br> W LAB. 15:30 - 17:20</td>
-                <td>SCL 211 </td>
-                <td>ผศ.ดร.ชฎาพร</td>
-            
-            </tr>
+                </tr>
 
-            <tr>
-                <td>COS2204</td>
-                <td>TH LEC. 11:30 - 13:20 <br>TH LAB. 13:30 - 15:20</td>
-                <td>SCL 204 <br> SCL 211/2</td>
-                <td>ผศ.ดร.เชาวลิต</td>
-                
-            </tr>
+                <tr>
+                    <td>COS3109</td>
+                    <td>W LEC. 13:30 - 15:20 <br> W LAB. 15:30 - 17:20</td>
+                    <td>SCL 211 </td>
+                    <td>ผศ.ดร.ชฎาพร</td>
 
-            <tr>
-                <td>COS3105</td>
-                <td>F LEC. 09:30 - 11:20 <br> F LAB. 11:30 - 13:20</td>
-                <td>SCL 211/2</td>
-                <td>อ.กฤษณ์</td>
-            </tr>
+                </tr>
 
-        </table>
+                <tr>
+                    <td>COS2204</td>
+                    <td>TH LEC. 11:30 - 13:20 <br>TH LAB. 13:30 - 15:20</td>
+                    <td>SCL 204 <br> SCL 211/2</td>
+                    <td>ผศ.ดร.เชาวลิต</td>
 
-        <div align="right"><br>
-            <i><b>Copyright &copy;2025 designed by Ornpreeya</b></i>
+                </tr>
+
+                <tr>
+                    <td>COS3105</td>
+                    <td>F LEC. 09:30 - 11:20 <br> F LAB. 11:30 - 13:20</td>
+                    <td>SCL 211/2</td>
+                    <td>อ.กฤษณ์</td>
+                </tr>
+            </table>
         </div>
+        <footer>
+            <div><br>
+                <i><b>Copyright &copy;2025 designed by Ornpreeya</b></i>
+            </div>
+        </footer>
 
-        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/5eeea355389655.59822ff824b72.gif" alt="gif1" width="470" height="320">
 
-    </body>
+
+
+    </section>
+
+
+
+</body>
+
 </html>
