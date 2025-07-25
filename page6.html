@@ -8,16 +8,103 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <title>Contact</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: center;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000000;
+            width: 100%;
+            font-size: large;
+            position: fixed;
+            /* ทำให้ติดกับหน้าจอ */
+            top: 0;
+            /* ชิดด้านบน */
+
+        }
+
+        li {
+            /* ทำให้แต่ละเมนูมีขนาดเท่ากัน */
+            float: left;
+            width: 10%;
+            /* border: 1px solid #fffcfc; ใส่ขีด*/
+        }
+
+        li:last-child {
+            float: right;
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #414040;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        .section {
+            text-align: center;
+            margin: 0;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/027/231/654/non_2x/illustration-graphic-of-aesthetic-background-template-with-simple-and-minimalist-pastel-colors-vector.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /* ถ้าอยากให้ภาพไม่เลื่อนตาม scroll */
+            background-size: cover;
+        }
+
+        .footer{
+            background-color: #6d583e;
+            color: aliceblue;
+            bottom: 20px;
+            font-size: large;
+        }
+
+        body {
+            margin-top: 113px;
+            /* เว้นให้เท่าความสูงของเมนู */
+        }
+    </style>
     </head>
-    <table border="3" width="100%" >
-        <tr>
-            <td align="center"><a href="page2.html"><h3>About Me</h3></a></td>
-            <td align="center"><a href="page3.html"><h3>Time Table</h3></a></td>
-            <td align="center"><a href="page4.html"><h3>My Hobby</h3></a></td>
-            <td align="center"><a href="page5.html"><h3>Project</h3></a></td>
-            <td align="center"><a href="index.html"><h3>Home</h3></a></td>
-        </tr>
-    </table> 
+   <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">
+                    <h3>Home</h3>
+                </a>
+            </li>
+            <li><a href="page2.html">
+                    <h3>About Me</h3>
+                </a>
+            </li>
+            <li><a href="page3.html">
+                    <h3>Time Table</h3>
+                </a>
+            </li>
+            <li><a href="page4.html">
+                    <h3>My Hobby</h3>
+                </a>
+            </li>
+            <li><a href="page5.html">
+                    <h3>Project</h3>
+                </a>
+            </li>
+            <li><a class="active" href="page6.html">
+                    <h3>Contact</h3>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
     <body>
         <h1>Contact</h1>
         <p><strong>Press on the <mark>icon</mark> to contact me</strong></p>
