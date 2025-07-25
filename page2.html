@@ -4,11 +4,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
 -->
 <html>
-    <head>
-        <title>About Me</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
+
+<head>
+    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
         ul {
             list-style-type: none;
             margin: center;
@@ -52,29 +53,39 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             background-color: #04AA6D;
         }
 
-        .section {
-            text-align: center;
-            margin: 0;
-            background-image: url('https://static.vecteezy.com/system/resources/previews/027/231/654/non_2x/illustration-graphic-of-aesthetic-background-template-with-simple-and-minimalist-pastel-colors-vector.jpg');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            /* ถ้าอยากให้ภาพไม่เลื่อนตาม scroll */
-            background-size: cover;
+        section {
+            padding-top: 60px;
+            display: flex;
+            height: 470px;
+            justify-content: center;
+            /* จัดกลางแนวนอน */
         }
 
-        .footer{
-            background-color: #6d583e;
-            color: aliceblue;
-            bottom: 20px;
+        footer {
+            width: 100%;
+            height: 50px;
+            background-color: #515050;
+            text-align: center;
+            color: rgb(255, 255, 255);
             font-size: large;
         }
 
         body {
+            width: 100%;
             margin-top: 113px;
             /* เว้นให้เท่าความสูงของเมนู */
         }
+
+        aside {
+            background-color: #c6c4c4;
+            float: left;
+            /* only for demonstration, should be removed */
+            padding: 20px;
+            width: 25%;
+            height: 490px;
+        }
     </style>
-    </head>
+</head>
 
 <header>
     <nav>
@@ -107,23 +118,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     </nav>
 </header>
 
-    <body>
-          
-        <h1>About Me</h1>
-            <center>
-
-                <div>
-                    <img src="aboutme1.jpg" width="250" height="300" alt="Picture 1" >
-                    <img src="aboutme2.jpg" width="250" height="300" alt="Picture 2.jpg">
-                    <img src="aboutme3.jpg" width="250" height="300" alt="Picture 3.jpg" >
-                </div>
-            </center> 
-
-                <hr width="70%"> <br> 
-
-                <div>
-                    <strong>INFORMATION:</strong><br>
-                    <b> 
+<body>
+    <article style="width: 100%;">
+        <aside>
+            <h1>INFORMATION:</h1>
+            <div>
+                <b>
                     Name: Ornpreeya Arsanathong (Mink)<br>
                     Student ID: 6605001699<br>
                     Academy: Ramkhamhaeng University<br>
@@ -132,12 +132,36 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                     Age: 20 years old<br>
                     Graduated: Assumption College Rayong<br>
                     GPAX :3.96<br>
-                    </b>
-                </div>
+                </b>
+            </div>
 
-                <div align="center"><br>
-    
-                    <i><b>Copyright &copy;2025 designed by Ornpreeya</b></i>
-                </div>
-    </body>
+            <hr style="border: 1px solid black; box-shadow: #414040;">
+
+            <div>
+                <strong>My favourite Song:</strong><br><br>
+                <iframe width="380" height="220" src="https://www.youtube.com/embed/YQ-qToZUybM?si=6ioZhEtlkcQfY_1W"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+            </div>
+        </aside>
+
+        <section>
+            <div>
+                <img src="aboutme1.jpg" width="350" height="400" alt="Picture 1">
+                <img src="aboutme2.jpg" width="350" height="400" alt="Picture 2.jpg">
+                <img src="aboutme3.jpg" width="350" height="400" alt="Picture 3.jpg">
+            </div>
+        </section>
+
+    </article>
+
+    <footer><br>
+        <i><b>Copyright &copy;2025 designed by Ornpreeya</b></i>
+
+    </footer>
+</body>
+
 </html>
